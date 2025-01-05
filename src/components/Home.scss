@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('./assets/fonts/Coolvetica.woff2') format('woff2'),
+         url('./assets/fonts/Coolvetica.woff') format('woff'),
+         url('./assets/fonts/Coolvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+   
+
+.home-page{
+
+    .text-zone{
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+    }
+    h1{
+        color: white;
+        font-size: 56px;
+        line-height: 53px;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+
+        &::before{
+            content: '<h1>';
+            font-family: 'La Belle aurore';
+            font-size: 18px;
+            color: yellow;
+            margin-top: -40px;
+            position: absolute;
+            left: 15px;
+            opacity: 0.6;
+
+        }
+
+        &::after{
+            content: '</h1>';
+            font-size: 18px;
+            font-family: 'La Belle aurore';
+            margin-top: 18px;
+            position: absolute;
+            color: yellow;
+            margin-left: 20px;
+            animation: fadeIn 1s 1.7s backwards;
+            opacity: 0.6;
+        }
+        img{
+            width: 32px;
+            margin-left: 20px;
+            opacity: 0;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+        }
+
+       
+    }
+}
+
+h2{
+
+    color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-family: 'Inter', sans-serif;
+    animation: fadeIn 1s 1.8s backwards;
+            
+}
+
+.flat-button{
+    color: yellow;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    padding: 10px 10px;
+    border: 1px solid yellow;
+    margin-top: 25px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+
+    &:hover{
+        background: yellow;
+        color: #333;
+        
+    }
+}
