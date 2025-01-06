@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.scss'
 import './Layout.scss'
 import Sign from '../assets/images/signature.png'
@@ -12,6 +12,13 @@ const Home = () => {
 
     const nameArray = ['h', 'a', 'r', 'd', 'u', 'l'];
     const jobArray = ['F', 'u', 'l', 'l', 'S', 't', 'a', 'c', 'k', ' ', 'D','e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'];
+
+    useEffect(() => {
+        return setTimeout(()=>{
+            setletterClass('text-animate-hover')
+        }, 4000)
+    }, [])
+    
   return (
     <div>
 
