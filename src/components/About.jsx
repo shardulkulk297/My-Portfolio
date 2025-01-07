@@ -3,6 +3,8 @@ import AnimateLetters from './AnimateLetters'
 import { useState, useEffect } from 'react'
 import './Layout.scss'
 import './About.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCss3, faGitAlt, faHtml5, faJava, faJsSquare, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 
 const About = () => {
     const [letterClass, setletterClass] =  useState('text-animate');
@@ -29,7 +31,31 @@ const About = () => {
                 <p>In one word, I am "evolving." My passion for learning and problem-solving, combined with my determination to excel, ensures that I continuously grow and make impactful contributions in the field of software development.</p>
 
         </div>
-      
+
+
+        <div className='stage-cube-cont'>
+            <div className="cubespinner">
+                <div className="face1">
+                    <FontAwesomeIcon icon={faReact} color='Blue' />
+                </div>
+                <div className="face2">
+                    <FontAwesomeIcon icon={faNodeJs} color='Green'  />
+                </div>
+                <div className="face3">
+                    <FontAwesomeIcon icon={faCss3} color='#28A4D9'/>
+                </div>
+                <div className="face4">
+                    <FontAwesomeIcon icon={faJsSquare}  color='Yellow'/>
+                </div>
+                <div className="face5">
+                    <FontAwesomeIcon icon={faHtml5} color='Orange'/>
+                </div>
+                <div className="face6">
+                    <FontAwesomeIcon icon={faGitAlt} color='Red'/>
+                </div>
+            </div>
+
+        </div>
     </div>
   )
 }
