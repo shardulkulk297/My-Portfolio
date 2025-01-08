@@ -6,10 +6,13 @@ import './About.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faGitAlt, faHtml5, faJava, faJsSquare, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
+import { useLocation } from 'react-router-dom'
 
 const About = () => {
+
     const [letterClass, setletterClass] = useState('text-animate');
     const [showContent, setShowContent] = useState(false)
+    const location = useLocation();
 
     useEffect(() => {
         const contentTimer = setTimeout(() => {
@@ -25,7 +28,7 @@ const About = () => {
             clearTimeout(letterTimer)
         }
 
-    }, [])
+    }, [location])
     return (
 
         <>
