@@ -1,6 +1,9 @@
 $primary-color: #ffd700;
 
 @import 'animate.css';
+@import '../node_modules/loaders.css/src/animations/pacman.scss';
+
+
 
 @font-face {
     font-family: 'Helvetica Neue';
@@ -23,3 +26,28 @@ $primary-color: #ffd700;
 input, textarea {
     font-family: 'Helvetica Neue';
 }
+
+.loader-active {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+    animation: fadeOut 1s 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+  
