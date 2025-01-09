@@ -29,9 +29,11 @@ const Contact = () => {
             <p>
             I am a passionate Full Stack Developer eager to bring ideas to life through technology. Whether you have queries, projects, or just want to connect, feel free to reach out—I'd love to collaborate and explore new opportunities!
             </p>
+          
 
           
         </div>
+
         <div className='contact-form'>
                 <form action="">
                     <ul>
@@ -52,12 +54,12 @@ const Contact = () => {
                         </li>
 
                         <li>
-                            <input type="submit" className='flat-button' value="SEND"/>
+                            <input type="submit" className='flat-buttonc' value="SEND"/>
                         </li>
                     </ul>
                 </form>
             </div>
-
+      
 
 
     </div>

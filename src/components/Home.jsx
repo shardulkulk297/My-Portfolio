@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import AnimateLetters from './AnimateLetters'
 import { useState } from 'react'
 import Loader from 'react-loaders'
+import dev from '../assets/images/Developer.svg'
 const Home = () => {
 
     const [letterClass, setletterClass] = useState('text-animate');
@@ -46,6 +47,12 @@ const Home = () => {
                     </div>
 
                 </div>
+
+            </div>
+
+            <div className='devImg'>
+
+                <img src={dev} alt="dev" /> 
 
             </div>
 
