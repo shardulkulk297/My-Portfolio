@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Contact.scss'
 import Loader from 'react-loaders'
 import AnimateLetters from './AnimateLetters'
+import emailJs from '@emailjs/browser'
+import toast from 'react-hot-toast';
 
 const Contact = () => {
 
     const [letterClass, setletterClass] = useState('text-animate')
+    const refForm = useRef()
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -14,6 +17,33 @@ const Contact = () => {
 
         return () => clearTimeout(timer);
     }, [])
+
+    const sendEmail = (e)=>{
+
+        e.preventDefault()
+
+        emailJs
+            .sendForm(
+                import.meta.env.VITE_SERVICE_ID,
+                import.meta.env.VITE_TEMPLATE_ID,
+                refForm.current,
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+
+            )
+            .then(
+                ()=>{
+
+                    toast.success("Message successfully Sent");
+                    // window.location.reload(false);
+
+                },
+                ()=>{
+                    toast.error("Failed to send Message")
+                }
+
+            )
+
+    }
 
     return (
         <>
@@ -33,7 +63,7 @@ const Contact = () => {
                     </p>
                     <div className='contact-form'>
 
-                        <form action="">
+                        <form ref={refForm} onSubmit={sendEmail} action="">
                             <ul>
                                 <li className='half'>
                                     <input type="text" name='name' placeholder='name' required />
@@ -48,7 +78,7 @@ const Contact = () => {
                                 </li>
 
                                 <li>
-                                    <textarea name="Message" id="Message" required></textarea>
+                                    <textarea name="Message" id="Message" placeholder='Message' required></textarea>
                                 </li>
 
                                 <li>

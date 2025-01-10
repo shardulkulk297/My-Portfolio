@@ -1,11 +1,11 @@
 .contact-form {
-    display: block; /* Ensures the form block respects the document flow */
-    position: static; /* Removes any absolute or relative positioning */
-    margin-top: 23rem; /* Adds spacing from the paragraph above */
+    display: block; 
+    position: static; 
+    margin-top: 23rem; 
     padding: 5rem;
     max-width: 600px;
     width: 100%;
-    background-color: transparent; /* Ensures no visual blocks */
+    background-color: transparent; 
     box-sizing: border-box;
 
     ul {
@@ -15,6 +15,9 @@
 
         li {
             margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
 
             &.half {
                 display: inline-block;
@@ -31,10 +34,14 @@
         textarea {
             width: 100%;
             padding: 0.5rem;
-            border: 1px solid #ccc;
+            border: 0;
             border-radius: 4px;
-            font-family: 'Poppins';
+            font-family: 'Inter';
             font-size: 16px;
+            background: #115173;
+            color: white;
+           
+
         }
 
         textarea {
@@ -44,14 +51,15 @@
         .flat-buttonc {
             display: inline-block;
             padding: 0.7rem 1.5rem;
-            background-color: yellow;
-            color: #000;
-            border: none;
+            background: transparent;
+            color: yellow;
+            border: 1px solid yellow;
             border-radius: 4px;
             font-family: 'Poppins';
             font-weight: bold;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            text-decoration: none;
 
             &:hover {
                 background-color: #ffd700;
@@ -60,10 +68,10 @@
     }
 }
 
-/* Ensures text and form stack correctly in `.text-zone` */
+
 .text-zone {
     display: flex;
-    flex-direction: column; /* Stacks elements vertically */
-    align-items: flex-start; /* Aligns all children to the left */
-    gap: 2rem; /* Adds consistent spacing between children */
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 2rem; 
 }
