@@ -66,7 +66,7 @@ const Contact = () => {
                         <form ref={refForm} onSubmit={sendEmail} action="">
                             <ul>
                                 <li className='half'>
-                                    <input type="text" name='name' placeholder='name' required />
+                                    <input type="text" name='name' placeholder='name' required /> 
                                 </li>
 
                                 <li className='half'>
@@ -78,7 +78,8 @@ const Contact = () => {
                                 </li>
 
                                 <li>
-                                    <textarea name="Message" id="Message" placeholder='Message' required></textarea>
+                                    <textarea name="message" id="Message" 
+                                    placeholder='Message' required></textarea>
                                 </li>
 
                                 <li>
