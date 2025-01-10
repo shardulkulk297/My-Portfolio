@@ -44,6 +44,9 @@
 
 .about-page, .contact-page{
     .text-zone{
+        display: flex;
+        flex-direction: column; /* Stack the elements vertically */
+        gap: 1.5rem; /* Add consistent spacing between elements */
         position: absolute;
         left: 10%;
         top: 50%;
@@ -74,6 +77,7 @@
             opacity: 0.6;
             line-height: 18px;
             color: yellow;
+            padding: 10px;
         }
 
         &::after{
@@ -85,6 +89,7 @@
             left: -30px;
             bottom: -20px;
             opacity:0.6;
+            margin-left: 20px;
         }
 
     }
@@ -129,4 +134,16 @@
     left: auto;
     bottom: 0;
     margin: auto;
+    animation: fadeInAnimation ease 57s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

@@ -50,7 +50,7 @@ const Home = () => {
 
             </div>
 
-            <div className='devImg'>
+            <div className='devImg '>
 
                 <img src={dev} alt="dev" /> 
 

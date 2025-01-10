@@ -1,81 +1,69 @@
-.contact-form{
+.contact-form {
+    display: block; /* Ensures the form block respects the document flow */
+    position: static; /* Removes any absolute or relative positioning */
+    margin-top: 23rem; /* Adds spacing from the paragraph above */
+    padding: 5rem;
+    max-width: 600px;
     width: 100%;
-    margin-top: 20px;
+    background-color: transparent; /* Ensures no visual blocks */
+    box-sizing: border-box;
 
-    ul{
+    ul {
+        list-style: none;
         padding: 0;
         margin: 0;
 
-        li{
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            margin-bottom: 10px;
-            overflow: hidden;
-            display: block;
-            position: relative;
-            opacity: 0;
-            animation: fadeInUp 2s 2s;
-            animation-fill-mode: forwards;
-            clear: both;
-        }
+        li {
+            margin-bottom: 1rem;
 
-        li.half{
-            width:49%;
-            margin-left: 2%;
-            float: left;
-            clear: none;
-
-            &:first-child{
-                margin-left: 0;
+            &.half {
+                display: inline-block;
+                width: 48%;
+                margin-right: 2%;
             }
 
+            &.half:last-child {
+                margin-right: 0;
+            }
         }
-        
 
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: 'Poppins';
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        .flat-buttonc {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            background-color: yellow;
+            color: #000;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Poppins';
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #ffd700;
+            }
+        }
     }
+}
 
-    input[type='text'],
-    input[type='email']{
-        width: 100%;
-        border: 0;
-        background: #115173;
-        height: 50px;
-        font-size: 16px;
-        color: white;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
-    textarea{
-        width: 100%;
-        border: 0;
-        background: #115173;
-        height: 50px;
-        font-size: 16px;
-        color: white;
-        padding: 20px;
-        min-height: 150px;
-        box-sizing: border-box;
-
-    }
-
-    .flat-buttonc{
-    color: #ffd700;
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-decoration: none;
-    padding: 8px 10px;
-    border: 1px solid #ffd700;
-    float: left;
-    font-family: 'Inter';
-    border-radius: 4px;
-    background: 0 0;
-    text-transform: uppercase;
-    float: right;
-    text-align: center;
-    margin-right: 10px;
-    }
-
-
-
+/* Ensures text and form stack correctly in `.text-zone` */
+.text-zone {
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: flex-start; /* Aligns all children to the left */
+    gap: 2rem; /* Adds consistent spacing between children */
 }
