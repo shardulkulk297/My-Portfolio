@@ -4,6 +4,7 @@ import Loader from 'react-loaders'
 import AnimateLetters from './AnimateLetters'
 import emailJs from '@emailjs/browser'
 import toast from 'react-hot-toast';
+import { MapContainer, Marker, TileLayer, Popup } from 'react-leaflet'
 
 const Contact = () => {
 
@@ -18,7 +19,7 @@ const Contact = () => {
         return () => clearTimeout(timer);
     }, [])
 
-    const sendEmail = (e)=>{
+    const sendEmail = (e) => {
 
         e.preventDefault()
 
@@ -31,13 +32,13 @@ const Contact = () => {
 
             )
             .then(
-                ()=>{
+                () => {
 
                     toast.success("Message successfully Sent");
                     // window.location.reload(false);
 
                 },
-                ()=>{
+                () => {
                     toast.error("Failed to send Message")
                 }
 
@@ -66,7 +67,7 @@ const Contact = () => {
                         <form ref={refForm} onSubmit={sendEmail} action="">
                             <ul>
                                 <li className='half'>
-                                    <input type="text" name='name' placeholder='name' required /> 
+                                    <input type="text" name='name' placeholder='name' required />
                                 </li>
 
                                 <li className='half'>
@@ -78,8 +79,8 @@ const Contact = () => {
                                 </li>
 
                                 <li>
-                                    <textarea name="message" id="Message" 
-                                    placeholder='Message' required></textarea>
+                                    <textarea name="message" id="Message"
+                                        placeholder='Message' required></textarea>
                                 </li>
 
                                 <li>
@@ -91,8 +92,34 @@ const Contact = () => {
 
 
 
+                </div>
+                <div className='info-map'>
+                    Shardul Kulkarni
+                    <br />
+                    India,
+                    <br />
+                    Gananjay Nagar, College Road S.K House 21400 <br />
+                    Kurundwad <br />
+                    <span>shardulkulk297@gmail.com</span>
 
                 </div>
+
+                <div className="map-wrap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d955.4958355452957!2d74.5941449284296!3d16.67771699900171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1736533515874!5m2!1sen!2sin"
+                        width="600"
+                        height="450"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    />
+
+
+                 
+                </div>
+
+
 
 
 
