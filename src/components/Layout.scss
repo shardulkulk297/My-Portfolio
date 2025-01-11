@@ -42,7 +42,7 @@
     animation-delay: 1s;
 }
 
-.about-page, .contact-page{
+.about-page, .contact-page, .project-page{
     .text-zone{
         display: flex;
         flex-direction: column; /* Stack the elements vertically */
@@ -146,4 +146,20 @@
     100% {
         opacity: 1;
     }
+}
+
+.card{
+    z-index: 0;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    left: auto;
+    bottom: 0;
+    margin: auto;
+}
+
+.cardContent{
+    
 }

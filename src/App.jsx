@@ -6,6 +6,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import {Toaster} from 'react-hot-toast'
+import Projects from './components/Projects'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route index element={<Home />}/>
           <Route path='about' element={<About />}/>
           <Route path='Contact' element={<Contact />}/>
+          <Route path='Projects' element={<Projects />}/>
         </Route>
         
         

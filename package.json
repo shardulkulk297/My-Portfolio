@@ -11,9 +11,14 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/icons-material": "^6.3.1",
+    "@mui/material": "^6.3.1",
+    "@mui/styled-engine-sc": "^6.3.1",
     "animate.css": "^4.1.1",
     "gsap-trial": "^3.12.5",
     "loaders.css": "^0.1.2",
@@ -25,7 +30,8 @@
     "react-router-dom": "^7.1.1",
     "react-toastify": "^11.0.2",
     "sass": "^1.83.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "styled-components": "^6.1.14"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
