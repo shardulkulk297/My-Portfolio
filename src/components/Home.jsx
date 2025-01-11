@@ -44,6 +44,7 @@ const Home = () => {
                         <h2>MERN | CORE JAVA | PYTHON</h2>
 
                         <Link to="/contact" className='flat-button'>CONTACT ME</Link>
+                        <Link to="https://drive.google.com/file/d/1_xkQvaJi2_MZMSerz3COAQC1iQqluoc1/view?usp=sharing" className='flat-button'>Resume</Link>
                     </div>
 
                 </div>
