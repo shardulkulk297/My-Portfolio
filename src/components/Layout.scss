@@ -1,33 +1,29 @@
-.page{
+.page {
     width: 100%;
     height: 100%;
     position: absolute;
-} 
-
-.top-tags{
-    
-    bottom: auto;
-    top: 35px;
-
 }
 
-.tags{
+.top-tags {
+    bottom: auto;
+    top: 35px;
+}
+
+.tags {
     color: yellow;
     opacity: 0.6;
     position: absolute;
     bottom: 0;
     left: 120px;
     font-size: 18px;
-    font-family: 'La Belle Aurore';
-
+    font-family: "La Belle Aurore";
 }
 
-.bottom-tag-html{
+.bottom-tag-html {
     margin-left: -19px;
-
 }
 
-.container{
+.container {
     width: 100%;
     will-change: contents;
     height: 90%;
@@ -42,8 +38,10 @@
     animation-delay: 1s;
 }
 
-.about-page, .contact-page, .project-page{
-    .text-zone{
+.about-page,
+.contact-page,
+.project-page {
+    .text-zone {
         display: flex;
         flex-direction: column; /* Stack the elements vertically */
         gap: 1.5rem; /* Add consistent spacing between elements */
@@ -54,12 +52,12 @@
         width: 35%;
         vertical-align: middle;
         display: table-cell;
-        max-height:90%;
+        max-height: 90%;
     }
 
-    h1{
+    h1 {
         font-size: 53px;
-        font-family: 'Poppins';
+        font-family: "Poppins";
         color: yellow;
         font-weight: 400;
         margin-top: 0;
@@ -67,9 +65,9 @@
         margin-bottom: 40px;
         left: 10px;
 
-        &::before{
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
+        &::before {
+            content: "<h1>";
+            font-family: "La Belle Aurore";
             font-size: 18px;
             position: absolute;
             margin-top: -10px;
@@ -80,51 +78,46 @@
             padding: 10px;
         }
 
-        &::after{
-            content: '</h1>';
-            font-family: 'La Belle Aurore';
+        &::after {
+            content: "</h1>";
+            font-family: "La Belle Aurore";
             font-size: 18px;
             line-height: 18px;
             position: absolute;
             left: -30px;
             bottom: -20px;
-            opacity:0.6;
+            opacity: 0.6;
             margin-left: 20px;
         }
-
     }
 
-    p{
+    p {
         font: 20px;
         color: white;
-        font-family:'Poppins';
+        font-family: "Poppins";
         font-weight: 400;
         min-width: fit-content;
         animation: pulse 1s;
-        
 
-        &:nth-of-type(1){
+        &:nth-of-type(1) {
             animation-delay: 1.1s;
         }
-        &:nth-of-type(2){
+        &:nth-of-type(2) {
             animation-delay: 1.2;
         }
-        &:nth-of-type(3){
+        &:nth-of-type(3) {
             animation-delay: 1.3s;
         }
-
     }
 
-    .text-animate-hover{
-        &:hover{
+    .text-animate-hover {
+        &:hover {
             color: white;
         }
     }
-
-    
 }
 
-.devImg{
+.devImg {
     z-index: 0;
     width: 400px;
     height: 400px;
@@ -147,19 +140,82 @@
         opacity: 1;
     }
 }
-
-.card{
-    z-index: 0;
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    top: 20%;
-    right: 15%;
-    left: auto;
-    bottom: 0;
-    margin: auto;
+.card-wrapper {
+    display: grid; /* Use grid for better layout control */
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr)); /* Responsive card columns */
+    gap: 20px; /* Space between cards */
+    justify-items: center; /* Center cards horizontally */
+    align-items: start; /* Align cards to the top */
+    margin: 40px auto; /* Center wrapper with margin */
+    padding:20px;
+    padding-bottom: 10px;
+    max-width: 1200px;
+    width: 100%;
 }
 
-.cardContent{
-    
+.card {
+    //    flex: 1 1 auto;
+    width: 100%;
+    max-width: 345px;
+
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Prevent content overflow */
+    transition:
+        transform 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+    background: linear-gradient(145deg, #1e293b, #334155);
+}
+
+.cardContent {
+    padding: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Hover animation */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+}
+
+.cardContent {
+    padding: 15px;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover; /* Ensure images fit proportionally */
+}
+
+.cardActions {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 15px;
+}
+
+.cardActions button {
+    font-size: 1.1rem; /* Larger button text */
+}
+
+.cardContent h5 {
+    font-family: "Poppins", sans-serif;
+    color: yellow;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cardContent p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+@media (max-width: 768px) {
+    .card-wrapper {
+        flex-direction: column; /* Stacks cards vertically */
+        align-items: center; /* Centers cards */
+    }
+
+    .card {
+        max-width: 100%; /* Takes full width of the parent container */
+    }
 }
