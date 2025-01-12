@@ -12,3 +12,6 @@ body{
   -webkit-font-smooting: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media screen and (max-width: 768px) { body { background-color: #022c43 !important; } }
+
+@media screen and (max-width: 480px) { body { background-color: #022c43 !important; } }

@@ -175,16 +175,7 @@ nav {
         line-height: 45px;
     }
 
-    nav a::after { display: none; }
-    
-    nav  {
-        a.active {
-            svg {
-                color: #ffd700;
-            }
-        }
-
-    }
+    nav a::after { display: none; } a.active svg { color: #ffd700; } a:hover svg { color: #ffd700; }
 
   
 }
@@ -227,16 +218,7 @@ nav {
     nav a.active svg { color: #ffd700; } nav a:hover svg { color: #ffd700; }
     nav a:hover svg { color: #ffd700; opacity: 1; transition: opacity 0.3s ease-in-out; }
 
-    nav a::after { display: none; }
-    
-    nav  {
-        a.active {
-            svg {
-                color: #ffd700;
-            }
-        }
-
-    }
+    nav a::after { display: none; } a.active svg { color: #ffd700; } a:hover svg { color: #ffd700; }
 
     
 }
@@ -269,48 +251,9 @@ nav {
         padding: 10px;
         line-height: 40px;
     }
-    nav a::after { display: none; }
-    
-    nav  {
-        a.active {
-            svg {
-                color: #ffd700;
-            }
-        }
-
-    }
+    nav a::after { display: none; } a.active svg { color: #ffd700; } a:hover svg { color: #ffd700; }
    
 
    
 }
 
-/* Very Small Mobile Responsiveness (max-width: 320px) */
-// @media screen and (max-width: 320px) {
-//     .nav-bar {
-//         width: 40px;
-//         padding-top: 5px;
-//     }
-
-//     nav a {
-//         font-size: 20px;
-//         padding: 10px;
-//         line-height: 40px;
-//     }
-
-//     .logo img {
-//         width: 15px;
-
-//         &.sub-logo {
-//             width: 80px;
-//         }
-//     }
-
-//     nav a {
-//         font-size: 14px;
-//         line-height: 32px;
-//     }
-
-//     ul li a {
-//         font-size: 20px;
-//     }
-// }
