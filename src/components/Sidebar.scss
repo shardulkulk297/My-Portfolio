@@ -175,7 +175,7 @@ nav {
         line-height: 45px;
     }
 
-    nav a::after { visibility: hidden; /* Hide the content but preserve space */ content: "" } a.active svg { color: #ffd700; } a:hover svg { color: #ffd700; }
+    nav a::after { /* Hide the content but preserve space */ content: "" } a.active svg { color: #ffd700; } a:hover svg { color: #ffd700; }
 
   
 }
@@ -218,7 +218,7 @@ nav {
     nav a.active svg { color: #ffd700; } nav a:hover svg { color: #ffd700; }
     nav a:hover svg { color: #ffd700; opacity: 1; transition: opacity 0.3s ease-in-out; }
 
-    nav a::after { visibility: hidden; /* Hide the content but preserve space */ content: "" } a.active svg { color: #ffd700; } a:hover svg { color: #ffd700; }
+    nav a::after {  content: "" } a.active svg { color: #ffd700; } a:hover svg { color: #ffd700; }
 
     
 }
@@ -251,7 +251,7 @@ nav {
         padding: 10px;
         line-height: 40px;
     }
-    nav a::after { visibility: hidden; /* Hide the content but preserve space */ content: "" } a.active svg { color: #ffd700; } a:hover svg { color: #ffd700; }
+    nav a::after {  /* Hide the content but preserve space */ content: "" } a.active svg { color: #ffd700; } a:hover svg { color: #ffd700; }
    
 
    
