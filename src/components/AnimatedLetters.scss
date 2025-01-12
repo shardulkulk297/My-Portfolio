@@ -26,3 +26,104 @@
         animation-delay: #{$i / 10}s;
     }
 }
+
+// Tablet styles
+@media screen and (max-width: 1024px) {
+    .text-animate,
+    .text-animate-hover {
+        min-width: 8px;
+        font-size: 0.9em;
+    }
+
+    // Adjust animation timing for better performance on tablets
+    @for $i from 1 through 35 {
+        .text-animate._#{$i} {
+            animation-delay: #{($i / 10) + 0.1}s; // Slightly longer delay for smoother appearance
+        }
+    }
+}
+
+// Mobile styles
+@media screen and (max-width: 768px) {
+    .text-animate,
+    .text-animate-hover {
+        min-width: 6px;
+        font-size: 0.8em;
+
+        // Optimize animations for mobile
+        animation-duration: 0.8s; // Slightly faster animation
+    }
+
+    // Adjust hover effects for touch devices
+    .text-animate-hover {
+        &:hover,
+        &:active,
+        &:focus {
+            animation: rubberBand 0.8s;
+            color: yellow;
+        }
+    }
+
+    // Adjust animation timing for mobile
+    @for $i from 1 through 35 {
+        .text-animate._#{$i} {
+            animation-delay: #{($i / 12)}s; // Faster sequential appearance
+        }
+    }
+}
+
+// Small mobile styles
+@media screen and (max-width: 480px) {
+    .text-animate,
+    .text-animate-hover {
+        min-width: 5px;
+        font-size: 0.7em;
+        animation-duration: 0.6s; // Even faster animation for small screens
+    }
+
+    // Further optimize animation timing for small screens
+    @for $i from 1 through 35 {
+        .text-animate._#{$i} {
+            animation-delay: #{($i / 15)}s; // Faster sequential appearance
+        }
+    }
+}
+
+// Define bounce in animation
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.1);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(0.89);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+// Define rubber band animation
+@keyframes rubberBand {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scaleX(1.25) scaleY(0.75);
+    }
+    40% {
+        transform: scaleX(0.75) scaleY(1.25);
+    }
+    60% {
+        transform: scaleX(1.15) scaleY(0.85);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

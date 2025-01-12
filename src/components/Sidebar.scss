@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 16px;
+    position: fixed;
 }
 
 .logo {
@@ -141,3 +142,120 @@ nav {
         }
     }
 
+
+
+/* Tablet Responsiveness (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .nav-bar {
+        width: 80px;
+    }
+
+    .logo img {
+        width: 25px;
+
+        &.sub-logo {
+            width: 200px;
+        }
+    }
+
+    nav a {
+        font-size: 20px;
+        line-height: 45px;
+    }
+
+    ul li a {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Responsiveness (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        width:60px;
+        padding-top: 10px;
+    }
+
+    .logo img {
+        width: 40px;
+
+        &.sub-logo {
+            width: 180px;
+        }
+    }
+
+    nav {
+        height: auto;
+        top: 10%;
+        margin-top: 0;
+    }
+
+    nav a {
+        font-size: 25px;
+        padding: 10px;
+        line-height: 40px;
+    }
+
+   
+
+    ul li a {
+        font-size: 30px;
+    }
+}
+
+/* Small Mobile Responsiveness (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .nav-bar {
+        width: 40px;
+        padding-top: 8px;
+    }
+
+    .logo img {
+        width: 18px;
+
+        &.sub-logo {
+            width: 100px;
+        }
+    }
+    nav a {
+        font-size: 18px;
+        padding: 10px;
+        line-height: 40px;
+    }
+
+    
+
+    ul li a {
+        font-size: 12px;
+    }
+}
+
+/* Very Small Mobile Responsiveness (max-width: 320px) */
+@media screen and (max-width: 320px) {
+    .nav-bar {
+        width: 40px;
+        padding-top: 5px;
+    }
+
+    nav a {
+        font-size: 20px;
+        padding: 10px;
+        line-height: 40px;
+    }
+
+    .logo img {
+        width: 15px;
+
+        &.sub-logo {
+            width: 80px;
+        }
+    }
+
+    nav a {
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    ul li a {
+        font-size: 11px;
+    }
+}
