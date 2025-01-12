@@ -7,7 +7,7 @@
 
 .top-tags {
     bottom: 0;
-    top: 35px;
+    top: 15px;
 }
 
 .tags {
@@ -37,6 +37,20 @@
     transform-style: preserve-3d;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
+}
+
+.text-zone-projects{
+    display: flex;
+        flex-direction: column; /* Stack the elements vertically */
+        gap: 1.5rem; /* Add consistent spacing between elements */
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
 }
 
 .about-page,
@@ -270,6 +284,8 @@
     }
     .card{
         padding: 5px;
+        margin: 10px;
+        
     }
 
     .card-wrapper {
@@ -291,10 +307,13 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    
     .tags {
         left: 60px;
         font-size: 15px;
     }
+
+   
 
     .container {
         width: 100%;
@@ -311,6 +330,8 @@
         animation: fadeIn 1s forwards;
         animation-delay: 1s;
     }
+
+   
 
     .devImg {
         z-index: 0;

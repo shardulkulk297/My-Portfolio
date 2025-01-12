@@ -16,11 +16,11 @@ import git from '../assets/images/giyt.jpg'
 const Projects = () => {
     return (
         <div className="container project-page">
-            {/* <div className="text-zone">
+            <div className="text-zone-projects">
 
                 <h1>My projects</h1>
-                <p>Roadmap vahi acha jisme project banaye acha</p>
-            </div> */}
+                
+            </div>
 
             <div className='card-wrapper'>
 

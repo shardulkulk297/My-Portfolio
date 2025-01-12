@@ -51,7 +51,8 @@ nav {
     margin-top: -120px;
     width: 100%;
 
-    a {
+    a 
+    {
         font-size: 22px;
         color: #40404e;
         display: block;
@@ -211,6 +212,11 @@ nav {
     ul li a {
         font-size:20px;
     }
+    nav a::after { display: none; }
+    nav a.active svg { color: #ffd700; } nav a:hover svg { color: #ffd700; }
+    nav a:hover svg { color: #ffd700; opacity: 1; transition: opacity 0.3s ease-in-out; }
+
+    
 }
 
 /* Small Mobile Responsiveness (max-width: 480px) */
@@ -241,8 +247,11 @@ nav {
         padding: 10px;
         line-height: 40px;
     }
-
+    nav a::after { display: none; }
     
+
+    nav a:hover svg { color: #ffd700; opacity: 1; transition: opacity 0.3s ease-in-out; }
+   
 
    
 }
