@@ -148,7 +148,7 @@
     justify-items: center; /* Center cards horizontally */
     align-items: start; /* Align cards to the top */
     margin: 20px auto; /* Center wrapper with margin */
-    padding:15px;
+    padding: 15px;
     padding-bottom: 10px;
     max-width: 1200px;
     width: 100%;
@@ -184,7 +184,7 @@
 }
 
 .cardContent {
-    padding: 15px;
+    padding: 0x;
     text-align: left;
 }
 
@@ -216,10 +216,9 @@
     font-size: 1.1rem;
 }
 
-
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     // body { background-color: lightblue; /* Test color */ }
-    .tags{
+    .tags {
         left: 60px;
         font-size: 15px;
     }
@@ -255,14 +254,46 @@
         animation-fill-mode: forwards;
     }
 
+    .card .MuiButton-root{
 
-  }
+       
+        bottom: 5px;
+    }
+    .cardContent p {
+        color: #94a3b8;
+        font-size: 1.1rem;
+        width: 100%;
+        position: relative;
+        left: 0%;
+        padding: 0;
+        margin: 0;
+    }
+    .card{
+        padding: 5px;
+    }
 
-  @media screen and (min-width: 481px) and (max-width: 768px){
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        align-items: start;
+        margin: 0px auto;
+        padding: 10px;
+        padding-bottom: 10px;
+        max-width: 1200px;
+        width: 100%;
+        position: relative;
+        left: -8%;
+        right: 30%;
+        bottom: 3%;
+    }
+}
 
-    .tags{
-        left: 80px;
-        // font-size: 30px;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .tags {
+        left: 60px;
+        font-size: 15px;
     }
 
     .container {
@@ -283,27 +314,58 @@
 
     .devImg {
         z-index: 0;
-        width: 300px;
+        width: 130px;
         height: 400px;
         position: absolute;
-        top: 0%;
+        top: 10%;
         right: 30%;
         left: auto;
-        bottom: 50%;
+        bottom: 30%;
         margin: auto;
         animation: fadeInAnimation ease 7s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
 
-    // body { background-color: lightgreen; /* Test color */ }
+    .card .MuiButton-root{
 
-  }
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+       
+        bottom: 5px;
+    }
+    .cardContent p {
+        color: #94a3b8;
+        font-size: 1.1rem;
+        width: 100%;
+        position: relative;
+        left: 0%;
+        padding: 0;
+        margin: 0;
+    }
+    .card{
+        padding: 5px;
+    }
 
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        align-items: start;
+        margin: 0px auto;
+        padding: 10px;
+        padding-bottom: 10px;
+        max-width: 1200px;
+        width: 100%;
+        position: relative;
+        left: -8%;
+        right: 30%;
+        bottom: 3%;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     // body { background-color: lightcoral; /* Test color */ }
-   
-    .tags{
+
+    .tags {
         left: 70px;
         font-size: 15px;
     }
@@ -338,6 +400,4 @@
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
-
-
-  }
+}

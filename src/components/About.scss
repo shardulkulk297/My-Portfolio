@@ -135,27 +135,45 @@
 
 /* Mobile Styles */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+   
   .stage-cube-cont {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 300px;
     padding-top: 0px;
     left: 0;
-    overflow: visibile;
+    top: 90%;
+    
+    
+    // overflow: visibile;
   }
-
   .about-page .text-zone {
-    position: relative;
-    left: 10px;
+    width: 80%;
+    position: relativ;
+    left: 200x;
+    right: 10px;
     top: 0;
     transform: none;
-    width: 20%;
-    padding: 20px;
+    
+
+    // padding: 20px;
     box-sizing: border-box;
+
+   
+  }
+
+  p {
+
+  
+    font-size: 10px;
+    position: relative;
+    right: 10%;
+    padding: 5px;
+    
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 18px;
     line-height: 40px;
     padding: 15px;
   }
@@ -165,9 +183,9 @@
     margin-left: calc(50% - 60px);
 
     div {
-      width: 120px;
-      height: 120px;
-      font-size: 60px;
+      width: 60px;
+      height: 30px;
+      font-size: 30px;
       box-shadow: 0 0 15px 0px lightyellow;
     }
 

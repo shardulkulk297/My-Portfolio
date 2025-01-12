@@ -181,33 +181,27 @@ nav {
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
     ul li a {
-        font-size: 20px;
+        font-size: 18px;
     }
     ul{
-        bottom: 200px;
+        bottom: 100px;
+    
     }
-
+    
     .nav-bar {
-        width:60px;
-        padding-top: 10px;
+        width: 40px;
+        padding-top: 8px;
     }
 
     .logo img {
-        width: 40px;
+        width: 18px;
 
         &.sub-logo {
-            width: 180px;
+            width: 100px;
         }
     }
-
-    nav {
-        height: auto;
-        top: 10%;
-        margin-top: 0;
-    }
-
     nav a {
-        font-size: 25px;
+        font-size: 20px;
         padding: 10px;
         line-height: 40px;
     }
@@ -215,7 +209,7 @@ nav {
    
 
     ul li a {
-        font-size: 30px;
+        font-size:20px;
     }
 }
 
@@ -254,32 +248,32 @@ nav {
 }
 
 /* Very Small Mobile Responsiveness (max-width: 320px) */
-@media screen and (max-width: 320px) {
-    .nav-bar {
-        width: 40px;
-        padding-top: 5px;
-    }
+// @media screen and (max-width: 320px) {
+//     .nav-bar {
+//         width: 40px;
+//         padding-top: 5px;
+//     }
 
-    nav a {
-        font-size: 20px;
-        padding: 10px;
-        line-height: 40px;
-    }
+//     nav a {
+//         font-size: 20px;
+//         padding: 10px;
+//         line-height: 40px;
+//     }
 
-    .logo img {
-        width: 15px;
+//     .logo img {
+//         width: 15px;
 
-        &.sub-logo {
-            width: 80px;
-        }
-    }
+//         &.sub-logo {
+//             width: 80px;
+//         }
+//     }
 
-    nav a {
-        font-size: 14px;
-        line-height: 32px;
-    }
+//     nav a {
+//         font-size: 14px;
+//         line-height: 32px;
+//     }
 
-    ul li a {
-        font-size: 20px;
-    }
-}
+//     ul li a {
+//         font-size: 20px;
+//     }
+// }
