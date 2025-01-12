@@ -117,7 +117,7 @@
     border-radius: 5px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .contact-form {
         margin-top: 18rem;
         padding: 3rem;
@@ -156,7 +156,7 @@
 }
 
 // Mobile Styles (max-width: 768px)
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     .contact-form {
         margin-top: 2rem;
         padding: 2rem;

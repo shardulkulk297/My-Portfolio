@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    bottom: 0;
 }
 
 .top-tags {
@@ -214,10 +215,13 @@
     color: #94a3b8;
     font-size: 1.1rem;
 }
-@media only screen and (max-width: 600px) {
 
+
+  @media screen and (max-width: 480px) {
+    // body { background-color: lightblue; /* Test color */ }
     .tags{
         left: 60px;
+        font-size: 15px;
     }
 
     .container {
@@ -254,10 +258,11 @@
 
   }
 
-  @media only screen and (max-width: 480px) {
+  @media screen and (min-width: 481px) and (max-width: 768px){
 
     .tags{
-        left: 60px;
+        left: 80px;
+        // font-size: 30px;
     }
 
     .container {
@@ -278,67 +283,29 @@
 
     .devImg {
         z-index: 0;
-        width: 130px;
-        height: 400px;
-        position: absolute;
-        top: 10%;
-        right: 30%;
-        left: auto;
-        bottom: 30%;
-        margin: auto;
-        animation: fadeInAnimation ease 7s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-
-
-  }
-
-  @media screen and (max-width: 768px){
-
-    .tags{
-        left: 60px;
-    }
-
-    .container {
-        width: 100%;
-        will-change: contents;
-        height: 90%;
-        min-height: 566px;
-        position: absolute;
-        opacity: 0;
-        top: 10%;
-        left: 12%;
-        margin: 0 auto;
-        z-index: 1;
-        transform-style: preserve-3d;
-        animation: fadeIn 1s forwards;
-        animation-delay: 1s;
-    }
-
-    .devImg {
-        z-index: 0;
-        width: 200px;
+        width: 300px;
         height: 400px;
         position: absolute;
         top: 0%;
         right: 30%;
         left: auto;
-        bottom: 40%;
+        bottom: 50%;
         margin: auto;
         animation: fadeInAnimation ease 7s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
 
-
-
+    // body { background-color: lightgreen; /* Test color */ }
 
   }
-  @media only screen and (max-width: 400px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
 
+    // body { background-color: lightcoral; /* Test color */ }
+   
     .tags{
-        left: 60px;
+        left: 70px;
+        font-size: 15px;
     }
 
     .container {
@@ -359,13 +326,13 @@
 
     .devImg {
         z-index: 0;
-        width: 130px;
+        width: 250px;
         height: 400px;
         position: absolute;
-        top: 10%;
+        top: 5%;
         right: 30%;
         left: auto;
-        bottom: 30%;
+        bottom: 60%;
         margin: auto;
         animation: fadeInAnimation ease 7s;
         animation-iteration-count: 1;

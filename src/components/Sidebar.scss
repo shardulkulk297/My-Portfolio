@@ -127,12 +127,13 @@ nav {
         list-style: none;
         text-align: center;
         margin: 0;
+        
 
         li {
             a {
                 padding: 7px 0;
                 display: block;
-                font-size: 15px;
+                font-size: 20px;
                 line-height: 16px;
                
             }
@@ -145,7 +146,16 @@ nav {
 
 
 /* Tablet Responsiveness (max-width: 1024px) */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    ul li a {
+        font-size: 30px;
+    }
+
+    ul{
+        bottom: 140px;
+        
+    }
     .nav-bar {
         width: 80px;
     }
@@ -159,17 +169,24 @@ nav {
     }
 
     nav a {
-        font-size: 20px;
+        font-size: 30px;
+        padding: 5px;
         line-height: 45px;
     }
 
-    ul li a {
-        font-size: 14px;
-    }
+  
 }
 
 /* Mobile Responsiveness (max-width: 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    ul li a {
+        font-size: 20px;
+    }
+    ul{
+        bottom: 200px;
+    }
+
     .nav-bar {
         width:60px;
         padding-top: 10px;
@@ -204,6 +221,15 @@ nav {
 
 /* Small Mobile Responsiveness (max-width: 480px) */
 @media screen and (max-width: 480px) {
+
+    ul li a {
+        font-size: 18px;
+    }
+    ul{
+        bottom: 100px;
+    
+    }
+    
     .nav-bar {
         width: 40px;
         padding-top: 8px;
@@ -217,16 +243,14 @@ nav {
         }
     }
     nav a {
-        font-size: 18px;
+        font-size: 20px;
         padding: 10px;
         line-height: 40px;
     }
 
     
 
-    ul li a {
-        font-size: 12px;
-    }
+   
 }
 
 /* Very Small Mobile Responsiveness (max-width: 320px) */
@@ -256,6 +280,6 @@ nav {
     }
 
     ul li a {
-        font-size: 11px;
+        font-size: 20px;
     }
 }
