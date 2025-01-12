@@ -175,7 +175,14 @@ nav {
         line-height: 45px;
     }
 
-    nav a::after { /* Hide the content but preserve space */ content: "" } a.active svg { color: #ffd700; } a:hover svg { color: #ffd700; }
+    nav a::after 
+    {   content: ""; 
+        opacity: 0; } 
+        a.active svg 
+        { color: #ffd700; }
+        
+        a:hover svg { color: #ffd700; 
+    }
 
   
 }
@@ -214,11 +221,14 @@ nav {
     ul li a {
         font-size:20px;
     }
-    nav a::after { display: none; }
-    nav a.active svg { color: #ffd700; } nav a:hover svg { color: #ffd700; }
-    nav a:hover svg { color: #ffd700; opacity: 1; transition: opacity 0.3s ease-in-out; }
-
-    nav a::after {  content: "" } a.active svg { color: #ffd700; } a:hover svg { color: #ffd700; }
+    nav a::after 
+    {   content: ""; 
+        opacity: 0; } 
+        a.active svg 
+        { color: #ffd700; }
+        
+        a:hover svg { color: #ffd700; 
+    }
 
     
 }
@@ -246,12 +256,14 @@ nav {
             width: 100px;
         }
     }
-    nav a {
-        font-size: 20px;
-        padding: 10px;
-        line-height: 40px;
+    nav a::after 
+    {   content: ""; 
+        opacity: 0; } 
+        a.active svg 
+        { color: #ffd700; }
+        
+        a:hover svg { color: #ffd700; 
     }
-    nav a::after {  /* Hide the content but preserve space */ content: "" } a.active svg { color: #ffd700; } a:hover svg { color: #ffd700; }
    
 
    
