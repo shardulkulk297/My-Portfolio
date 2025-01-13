@@ -5,7 +5,7 @@ import LogoSubtitle from '../assets/images/logo_sub.png'
 import Sign from '../assets/images/signature.png'
 import sign2 from '../assets/images/sign2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faTasks, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faGear, faHome, faTasks, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 import mee from '../assets/images/me.png'
@@ -43,6 +43,13 @@ const Sidebar = () => {
           to="/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) => (isActive ? "active skills-link" : "skills-link")}
+          to="/skills"
+        >
+          <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
         </NavLink>
 
         <NavLink
