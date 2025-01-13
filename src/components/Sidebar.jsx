@@ -8,6 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faTasks, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
+import mee from '../assets/images/me.png'
+
 const Sidebar = () => {
   return (
     <>
@@ -15,7 +17,7 @@ const Sidebar = () => {
 
       <Link className='logo' to='/'>
 
-        <img src={LogoS} alt="logo" />
+        <img src={mee}  alt="logo" />
         <img className='sub-logo' src={Sign} alt="logosub" />
         {/* <img className='sub-logo2' src={sign2} alt="kulkarni" /> */}
 

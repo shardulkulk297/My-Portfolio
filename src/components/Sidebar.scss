@@ -25,7 +25,7 @@
 
     img {
         display: block;
-        width: 30px;
+        width: 60px;
         height: auto;
         margin: 0;
 
@@ -195,10 +195,10 @@ ul {
     }
 
     .logo img {
-        width: 18px;
+        width: 50px;
 
         &.sub-logo {
-            width: 100px;
+            width: 165px;
         }
     }
     nav a {
@@ -224,6 +224,10 @@ ul {
 
 /* Small Mobile Responsiveness (max-width: 480px) */
 @media screen and (max-width: 480px) {
+
+    
+    
+
     ul li a {
         font-size: 18px;
     }
@@ -237,10 +241,10 @@ ul {
     }
 
     .logo img {
-        width: 18px;
+        width: 50px;
 
         &.sub-logo {
-            width: 100px;
+            width: 165px;
         }
     }
     nav a::after {
