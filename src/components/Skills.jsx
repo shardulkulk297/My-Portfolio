@@ -1,12 +1,13 @@
 import React from 'react'
 import './Layout.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faGitAlt, faGithub, faGitSquare, faHtml5, faJava, faJsSquare, faNode, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faCss3, faGitAlt, faGithub, faGitSquare, faHtml5, faJava, faJsSquare, faNodeJs, faNode, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faDatabase, faNetworkWired } from '@fortawesome/free-solid-svg-icons'
 import mdb from '../assets/images/mdb.svg'
 import rest from '../assets/images/rest.png'
-import sih from '../assets/images/sih.JPG'
-import dipex from '../assets/images/dipex.JPG'
+
+
+
 const Skills = () => {
     return (
         <>
@@ -100,13 +101,32 @@ const Skills = () => {
                 </div>
             </div>
         </div>
-
-        <div className='devImg2 '>
-             <img src={sih} alt="dev" /> 
-             <p>Smart India Hackathon Grand Finalist 2023</p>
-             <img src={dipex} alt="dev" /> 
-             <p>DIPEX 2024 Finalist & General Championship Winner</p>
-        </div>
+        
+         <div className='stage-cube-cont'>
+                                <div className="cubespinner">
+                                    <div className="face1">
+                                        <FontAwesomeIcon icon={faReact} color='Blue' />
+                                    </div>
+                                    <div className="face2">
+                                        <FontAwesomeIcon icon={faNodeJs} color='Green' />
+                                    </div>
+                                    <div className="face3">
+                                        <FontAwesomeIcon icon={faCss3} color='#28A4D9' />
+                                    </div>
+                                    <div className="face4">
+                                        <FontAwesomeIcon icon={faJsSquare} color='Yellow' />
+                                    </div>
+                                    <div className="face5">
+                                        <FontAwesomeIcon icon={faHtml5} color='Orange' />
+                                    </div>
+                                    <div className="face6">
+                                        <FontAwesomeIcon icon={faGitAlt} color='Red' />
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+      
         
 
     </>
