@@ -183,7 +183,7 @@
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    // box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 20px rgba(209, 221, 45, 0.5);
     overflow: hidden; /* Prevent content overflow */
     transition:
         transform 0.3s ease-in-out,
@@ -218,7 +218,8 @@
 }
 
 .cardActions button {
-    font-size: 1.1rem; /* Larger button text */
+    font-size: 0rem;
+    
 }
 
 .cardContent h5 {
@@ -231,6 +232,21 @@
 .cardContent p {
     color: #94a3b8;
     font-size: 1.1rem;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin: 0;
+    padding-top: 2px;
+}
+.card .MuiButton-root{
+    background: linear-gradient(145deg, #1e293b, #1a2234); 
+    color: blue($color: #000000);
+     border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 8px 18px; font-size: 1.1rem; font-family: "Poppins", sans-serif; transition: all 0.3s ease;
+       
+    bottom: 18px;
+
+    &:hover{
+        background: linear-gradient(145deg, yellow, yellow); 
+    }
 }
 
 @media screen and (max-width: 480px) {

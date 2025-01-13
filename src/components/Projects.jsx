@@ -55,7 +55,7 @@ const Projects = () => {
                                 Collaborative Development Environment
                             </Typography>
                             <Typography variant="body2" sx={{ color: '#94a3b8', fontSize: '1.1rem' }}>
-                                <p>Tech Stack: MERN, Socket.io, Tailwind CSS</p>
+                                <p><strong>Tech Stack: MERN, Socket.io, Tailwind CSS</strong></p>
                                 Real time code editor for coders and Developers
                             </Typography>
                         </CardContent>
@@ -98,7 +98,7 @@ const Projects = () => {
                                 PressPix
                             </Typography>
                             <Typography variant="body2" sx={{ color: '#94a3b8', fontSize: '1.1rem' }}>
-                                <p>Tech Stack: HTML5, CSS3, Python3(Flask)</p>
+                                <p><strong>Tech Stack: HTML5, CSS3, Python3(Flask)</strong></p>
                                 
                                 Text to video converter using unsplash API for news and press releases
                             </Typography>
@@ -140,7 +140,7 @@ const Projects = () => {
                                 Bus Pass Registration System
                             </Typography>
                             <Typography variant="body2" sx={{ color: '#94a3b8', fontSize: '1.1rem' }}>
-                                <p>Tech stack: HTML5, CSS3, JavaScript, SheetDBApi (Google sheets), jsPDF</p>
+                                <p><strong>Tech stack: HTML5, CSS3, JavaScript, SheetDBApi (Google sheets), jsPDF</strong></p>
                                 A pass registration app for institutes who have bus facilities.
                             </Typography>
                         </CardContent>
@@ -182,7 +182,7 @@ const Projects = () => {
                                 MelodyWave
                             </Typography>
                             <Typography variant="body2" sx={{ color: '#94a3b8', fontSize: '1.1rem' }}>
-                                <p>Tech Stack: HTML5, CSS3, Javascript</p>
+                                <p><strong>Tech Stack: HTML5, CSS3, Javascript</strong></p>
                                 A responsive web music player
                             </Typography>
                         </CardContent>
@@ -224,7 +224,7 @@ const Projects = () => {
                                 QR Based Tourist Information System
                             </Typography>
                             <Typography variant="body2" sx={{ color: '#94a3b8', fontSize: '1.1rem' }}>
-                                <p>Tech stack: React, Node.js, Gemeni API, Google cloud text to speech </p>
+                                <p><strong>Tech stack: React, Node.js, Gemeni API, Google cloud text to speech </strong></p>
                                 A tourist information system 
                             </Typography>
                         </CardContent>
@@ -267,7 +267,7 @@ const Projects = () => {
                                 Checkout my Github for More
                             </Typography>
                             <Typography variant="body2" sx={{ color: '#94a3b8', fontSize: '1.1rem' }}>
-                                Github: shardulkulk297
+                                <strong>Github: shardulkulk297</strong>
                             </Typography>
                         </CardContent>
                         <CardActions>

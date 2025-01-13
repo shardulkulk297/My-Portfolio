@@ -38,7 +38,7 @@ const Home = () => {
                             <span className={`${letterClass} _14`}>'m</span>
 
                             <span> </span>
-                            <span style={{color:'yellow', fontSize: '40px'}} className={`${letterClass} _15`} >S</span>
+                            <span style={{color:'yellow', fontSize: '60px'}} className={`${letterClass} _15`} >S</span>
                             <AnimateLetters letterClass={letterClass} strArray={nameArray} idx={15} />
                             <br />
                             <AnimateLetters letterClass={letterClass} strArray={jobArray} idx={15} />
