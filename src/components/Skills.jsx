@@ -52,7 +52,7 @@ const Skills = () => {
                             </div>
 
                             <div className='icon'>
-                            <img width={80} height={75} src={rest} alt="MongoDB" />
+                                <img className='Rest' width={60} height={65} src={rest} alt="MongoDB" />
 
                             </div>
                         </div>
@@ -65,18 +65,18 @@ const Skills = () => {
                         </div>
                         <div className='icons'>
                             <div className='icon'>
-                           
-                            <img width={60} src={mdb} alt="MongoDB" />
+
+                                <img width={60} src={mdb} alt="MongoDB" />
 
                             </div>
                             <div className='icon'>
-                            <FontAwesomeIcon icon={faGitAlt} color='Orange' />
+                                <FontAwesomeIcon icon={faGitAlt} color='Orange' />
 
                             </div>
                             <div className='icon'>
-                            <FontAwesomeIcon icon={faGithub} color='white' />
+                                <FontAwesomeIcon icon={faGithub} color='white' />
                             </div>
-                            
+
                         </div>
 
                     </div>
@@ -91,7 +91,7 @@ const Skills = () => {
                             <p>People Management</p>
                             <p>Video Editing</p>
                             <p>Content Creation</p>
-                            
+
                         </div>
 
                     </div>
@@ -102,13 +102,13 @@ const Skills = () => {
 
 
 
-              
-
-             
 
 
 
-                
+
+
+
+
 
                 <div className='icon'>
                     {/* <img width={80} src={mdb} alt="MongoDB" />

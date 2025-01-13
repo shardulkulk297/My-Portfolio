@@ -1,21 +1,16 @@
-.skills-content{
+.skills-content {
     position: relative;
     width: 100%;
     margin-bottom: 30px;
-    
-    
-    
 }
-.mainS{
-
-   padding-bottom: 10px;
-   margin-bottom: 10px;
-   margin-top: 20px;
-   position: absolute;
-   top: 50%;
-   left: 10%;
-   width: 100%;
-
+.mainS {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 100%;
 }
 
 .icons {
@@ -30,38 +25,33 @@
     animation: fadeInAnimation ease 7s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
-    p{
+
+    p {
         gap: 0px;
         margin: 0px;
         border: 2px solid yellow;
         padding: 5px;
         border-radius: 10px;
-        font-family: 'Poppins';
+        font-family: "Poppins";
         font-weight: 800;
         background: linear-gradient(145deg, #1e293b, #1a2234);
-    
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
+
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
     }
-    
 }
 
 .skill-text {
- 
     h2 {
         color: rgb(250, 250, 176);
         font-size: 17px;
         font-family: "Inter";
         font-weight: 800;
-        
-        
     }
 }
 
 .icon {
     font-size: 55px;
-    
 }
 
 .page {
@@ -396,6 +386,139 @@
 
 @media screen and (max-width: 480px) {
     // body { background-color: lightblue; /* Test color */ }
+
+    .skills-page {
+        .text-zone {
+            display: flex;
+            flex-direction: column; /* Stack the elements vertically */
+            gap: 1.5rem; /* Add consistent spacing between elements */
+            position: absolute;
+            left: 5%;
+            top: 10%;
+            transform: translateY(-50%);
+            width: 35%;
+            vertical-align: middle;
+            display: table-cell;
+            max-height: 90%;
+
+            .skills-content {
+                width: 100%;
+            }
+        }
+
+        h1 {
+            font-size: 53px;
+            font-family: "Poppins";
+            color: yellow;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: 10px;
+            padding: 10px;
+
+            &::before {
+                content: "<h1>";
+                font-family: "La Belle Aurore";
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px;
+                left: -10px;
+                top: -10px;
+                opacity: 0.6;
+                line-height: 18px;
+                color: yellow;
+                padding: 10px;
+            }
+
+            &::after {
+                content: "</h1>";
+                font-family: "La Belle Aurore";
+                font-size: 18px;
+                line-height: 18px;
+                position: absolute;
+                left: -30px;
+                bottom: -20px;
+                opacity: 0.6;
+                margin-left: 20px;
+            }
+        }
+
+        p {
+            font: 20px;
+            color: rgb(211, 202, 40);
+            font-family: "INTER";
+            font-weight: 800;
+            min-width: fit-content;
+            animation: pulse 1s;
+
+            &:nth-of-type(1) {
+                animation-delay: 1.1s;
+            }
+            &:nth-of-type(2) {
+                animation-delay: 1.2;
+            }
+            &:nth-of-type(3) {
+                animation-delay: 1.3s;
+            }
+        }
+
+        .text-animate-hover {
+            &:hover {
+                color: white;
+            }
+        }
+    }
+    .skills-content {
+        position: relative;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .mainS {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        width: 100%;
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 0px 0;
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+
+        animation: fadeInAnimation ease 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        margin: 5px;
+    }
+
+    .skill-text {
+        h2 {
+            color: rgb(250, 250, 176);
+            font-size: 17px;
+            font-family: "Inter";
+            font-weight: 800;
+        }
+    }
+
+    .icon {
+        font-size: 40px;
+        padding: 5px;
+
+        .Rest {
+            visibility: hidden;
+            display: none;
+        }
+    }
+
     .tags {
         left: 60px;
         font-size: 15px;
@@ -477,6 +600,138 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    .skills-page {
+        .text-zone {
+            display: flex;
+            flex-direction: column; /* Stack the elements vertically */
+            gap: 1.5rem; /* Add consistent spacing between elements */
+            position: absolute;
+            left: 5%;
+            top: 10%;
+            transform: translateY(-50%);
+            width: 35%;
+            vertical-align: middle;
+            display: table-cell;
+            max-height: 90%;
+
+            .skills-content {
+                width: 100%;
+            }
+        }
+
+        h1 {
+            font-size: 53px;
+            font-family: "Poppins";
+            color: yellow;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: 10px;
+            padding: 10px;
+
+            &::before {
+                content: "<h1>";
+                font-family: "La Belle Aurore";
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px;
+                left: -10px;
+                top: -10px;
+                opacity: 0.6;
+                line-height: 18px;
+                color: yellow;
+                padding: 10px;
+            }
+
+            &::after {
+                content: "</h1>";
+                font-family: "La Belle Aurore";
+                font-size: 18px;
+                line-height: 18px;
+                position: absolute;
+                left: -30px;
+                bottom: -20px;
+                opacity: 0.6;
+                margin-left: 20px;
+            }
+        }
+
+        p {
+            font: 20px;
+            color: rgb(211, 202, 40);
+            font-family: "INTER";
+            font-weight: 800;
+            min-width: fit-content;
+            animation: pulse 1s;
+
+            &:nth-of-type(1) {
+                animation-delay: 1.1s;
+            }
+            &:nth-of-type(2) {
+                animation-delay: 1.2;
+            }
+            &:nth-of-type(3) {
+                animation-delay: 1.3s;
+            }
+        }
+
+        .text-animate-hover {
+            &:hover {
+                color: white;
+            }
+        }
+    }
+    .skills-content {
+        position: relative;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .mainS {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        width: 100%;
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 0px 0;
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+
+        animation: fadeInAnimation ease 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        margin: 5px;
+    }
+
+    .skill-text {
+        h2 {
+            color: rgb(250, 250, 176);
+            font-size: 17px;
+            font-family: "Inter";
+            font-weight: 800;
+        }
+    }
+
+    .icon {
+        font-size: 40px;
+        padding: 5px;
+
+        .Rest {
+            visibility: hidden;
+            display: none;
+        }
+    }
+
     .project-page h1 {
         font-size: 40px;
         padding: 10px;
@@ -556,6 +811,138 @@
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .skills-page {
+        .text-zone {
+            display: flex;
+            flex-direction: column; /* Stack the elements vertically */
+            gap: 1.5rem; /* Add consistent spacing between elements */
+            position: absolute;
+            left: 5%;
+            top: 10%;
+            transform: translateY(-50%);
+            width: 35%;
+            vertical-align: middle;
+            display: table-cell;
+            max-height: 90%;
+
+            .skills-content {
+                width: 100%;
+            }
+        }
+
+        h1 {
+            font-size: 53px;
+            font-family: "Poppins";
+            color: yellow;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: 10px;
+            padding: 10px;
+
+            &::before {
+                content: "<h1>";
+                font-family: "La Belle Aurore";
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px;
+                left: -10px;
+                top: -10px;
+                opacity: 0.6;
+                line-height: 18px;
+                color: yellow;
+                padding: 10px;
+            }
+
+            &::after {
+                content: "</h1>";
+                font-family: "La Belle Aurore";
+                font-size: 18px;
+                line-height: 18px;
+                position: absolute;
+                left: -30px;
+                bottom: -20px;
+                opacity: 0.6;
+                margin-left: 20px;
+            }
+        }
+
+        p {
+            font: 20px;
+            color: rgb(211, 202, 40);
+            font-family: "INTER";
+            font-weight: 800;
+            min-width: fit-content;
+            animation: pulse 1s;
+
+            &:nth-of-type(1) {
+                animation-delay: 1.1s;
+            }
+            &:nth-of-type(2) {
+                animation-delay: 1.2;
+            }
+            &:nth-of-type(3) {
+                animation-delay: 1.3s;
+            }
+        }
+
+        .text-animate-hover {
+            &:hover {
+                color: white;
+            }
+        }
+    }
+    .skills-content {
+        position: relative;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .mainS {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        width: 100%;
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 0px 0;
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+
+        animation: fadeInAnimation ease 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        margin: 5px;
+    }
+
+    .skill-text {
+        h2 {
+            color: rgb(250, 250, 176);
+            font-size: 17px;
+            font-family: "Inter";
+            font-weight: 800;
+        }
+    }
+
+    .icon {
+        font-size: 40px;
+        padding: 5px;
+
+        .Rest {
+            visibility: hidden;
+            display: none;
+        }
+    }
+
     .project-page h1 {
         font-size: 40px;
         padding: 10px;
