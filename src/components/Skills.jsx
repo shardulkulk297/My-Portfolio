@@ -98,62 +98,9 @@ const Skills = () => {
 
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div className='icon'>
-                    {/* <img width={80} src={mdb} alt="MongoDB" />
-
-                    </div>
-
-                    <div className='icon'>
-                        <img width={100} src={rest} alt="MongoDB" /> */}
-
-                </div>
-
-                <div className='icon'>
-
-
-
-
-
-
-                </div>
-
-                <div className='icon'>
-
-
-
-                </div>
-                {/* <div className='icon'>
-
-                        <FontAwesomeIcon icon={faGithub} color='white' />
-
-                    </div>
-                    <div className='icon'>
-
-                        <FontAwesomeIcon icon={faGitAlt} color='Orange' />
-
-                    </div> */}
-
-
-
-
-
             </div>
-
         </div>
+        
         <div className='devImg2 '>
              <img src={sih} alt="dev" /> 
              <p>Smart India Hackathon Grand Finalist 2023</p>
