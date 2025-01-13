@@ -5,8 +5,8 @@ import { faCss3, faGitAlt, faGithub, faGitSquare, faHtml5, faJava, faJsSquare, f
 import { faCode, faDatabase, faNetworkWired } from '@fortawesome/free-solid-svg-icons'
 import mdb from '../assets/images/mdb.svg'
 import rest from '../assets/images/rest.png'
-import sih from '../assets/images/sih.jpg'
-import dipex from '../assets/images/dipex.jpg'
+import sih from '../assets/images/sih.JPG'
+import dipex from '../assets/images/dipex.JPG'
 const Skills = () => {
     return (
         <>
@@ -100,7 +100,7 @@ const Skills = () => {
                 </div>
             </div>
         </div>
-        
+
         <div className='devImg2 '>
              <img src={sih} alt="dev" /> 
              <p>Smart India Hackathon Grand Finalist 2023</p>
