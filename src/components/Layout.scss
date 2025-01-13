@@ -270,7 +270,7 @@
     width: 400px;
     height: 400px;
     position: absolute;
-    top: 20%;
+    top: 0%;
     right: 15%;
     left: auto;
     bottom: 0;
@@ -278,6 +278,39 @@
     animation: fadeInAnimation ease 7s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+.devImg2 {
+    
+    
+
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    left: auto;
+    bottom: 0;
+    margin: auto;
+    animation: fadeInAnimation ease 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+    img{
+        border-radius: 10px;
+        width: 380px;
+   
+    }
+
+    p{
+        font: 15px;
+        color: yellow;
+        font-family: "Poppins";
+        font-weight: 800;
+        min-width: fit-content;
+        animation: pulse 1s;
+        position: relative;
+        left: 1%;
+        width: 100%;
+    }
 }
 @keyframes fadeInAnimation {
     0% {
@@ -386,6 +419,40 @@
 
 @media screen and (max-width: 480px) {
     // body { background-color: lightblue; /* Test color */ }
+
+    .devImg2 {
+    
+    
+
+        position: absolute;
+        top: 145%;
+        right: 10%;
+        left: 16%;
+        bottom: 5%;
+        margin: auto;
+        animation: fadeInAnimation ease 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        
+        img{
+            border-radius: 10px;
+            width: 300px;
+       
+        }
+    
+        p{
+            font: 15px;
+            color: yellow;
+            font-family: "Poppins";
+            font-weight: 800;
+            min-width: fit-content;
+            animation: pulse 1s;
+            position: relative;
+            left: 1%;
+            width: 100%;
+        }
+    }
+
 
     .skills-page {
         .text-zone {
@@ -600,6 +667,41 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .devImg2 {
+    
+    
+
+        position: absolute;
+        top: 145%;
+        right: 10%;
+        left: 16%;
+        bottom: 5%;
+        margin: auto;
+        animation: fadeInAnimation ease 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        
+        img{
+            border-radius: 10px;
+            width: 300px;
+       
+        }
+    
+        p{
+            font: 15px;
+            color: yellow;
+            font-family: "Poppins";
+            font-weight: 800;
+            min-width: fit-content;
+            animation: pulse 1s;
+            position: relative;
+            left: 1%;
+            width: 100%;
+        }
+    }
+
+
     .skills-page {
         .text-zone {
             display: flex;
@@ -811,6 +913,40 @@
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .devImg2 {
+    
+    
+
+        position: absolute;
+        top: 145%;
+        right: 10%;
+        left: 16%;
+        bottom: 5%;
+        margin: auto;
+        animation: fadeInAnimation ease 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        
+        img{
+            border-radius: 10px;
+            width: 300px;
+       
+        }
+    
+        p{
+            font: 15px;
+            color: yellow;
+            font-family: "Poppins";
+            font-weight: 800;
+            min-width: fit-content;
+            animation: pulse 1s;
+            position: relative;
+            left: 1%;
+            width: 100%;
+        }
+    }
+
     .skills-page {
         .text-zone {
             display: flex;

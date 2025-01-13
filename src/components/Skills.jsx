@@ -5,9 +5,11 @@ import { faCss3, faGitAlt, faGithub, faGitSquare, faHtml5, faJava, faJsSquare, f
 import { faCode, faDatabase, faNetworkWired } from '@fortawesome/free-solid-svg-icons'
 import mdb from '../assets/images/mdb.svg'
 import rest from '../assets/images/rest.png'
-
+import sih from '../assets/images/sih.jpg'
+import dipex from '../assets/images/dipex.jpg'
 const Skills = () => {
     return (
+        <>
         <div className='container skills-page'>
             <div className='text-zone '>
                 <h1>Skills</h1>
@@ -152,6 +154,16 @@ const Skills = () => {
             </div>
 
         </div>
+        <div className='devImg2 '>
+             <img src={sih} alt="dev" /> 
+             <p>Smart India Hackathon Grand Finalist 2023</p>
+             <img src={dipex} alt="dev" /> 
+             <p>DIPEX 2024 Finalist & General Championship Winner</p>
+        </div>
+        
+
+    </>
+        
 
 
     )
