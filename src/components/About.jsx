@@ -7,8 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faGitAlt, faHtml5, faJava, faJsSquare, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import { useLocation } from 'react-router-dom'
-import sih from '../assets/images/sih.JPG'
-import dipex from '../assets/images/dipex.JPG'
+
 const About = () => {
 
     const [letterClass, setletterClass] = useState('text-animate');
@@ -60,9 +59,9 @@ const About = () => {
                 </div>)}
 
             <div className='devImg2 '>
-                <img src={sih} alt="dev" />
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7143299603629596672"><img src="https://i.ibb.co/RzcBPdF/sih.jpg" alt="sih"/></a>
                 <p>Smart India Hackathon Grand Finalist 2023</p>
-                <img src={dipex} alt="dev" />
+                <a href="https://www.linkedin.com/posts/shardulkulk297_dipex2024-dipex2024-activity-7172807578270351360-bP1n?utm_source=share&utm_medium=member_desktop"><img src="https://i.ibb.co/fMGW2qY/dipex.jpg" alt="dipex" /></a>
                 <p>DIPEX 2024 Finalist & General Championship Winner</p>
             </div>
 
