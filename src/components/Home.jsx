@@ -62,7 +62,7 @@ const Home = () => {
             </div>
 
             <div className='self'>
-                <img width={150} src={sk} alt="" />
+            <a href="linked.com/shardulkulk297"><img width={150} src="https://i.ibb.co/qWrPPm9/sk.png" alt="sk" border="0"/></a>
             </div>
 
             <Loader type='pacman' />
