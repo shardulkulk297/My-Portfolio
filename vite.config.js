@@ -38,5 +38,5 @@ export default defineConfig({
     historyApiFallback: true,
   },
 
-  assetsInclude: ['**/*.JPG'], // Ensure .JPG files are included as assets
+  assetsInclude: ['**/*.JPG', '**/*.JPEG'], // Ensure .JPG files are included as assets
 });

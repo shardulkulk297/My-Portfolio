@@ -271,7 +271,7 @@
     height: 400px;
     position: absolute;
     top: 0%;
-    right: 15%;
+    right: 7%;
     left: auto;
     bottom: 0;
     margin: auto;
@@ -280,10 +280,22 @@
     animation-fill-mode: forwards;
 }
 
-.devImg2 {
-    
-    
+.self {
+    z-index: 0;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0%;
+    right: 20%;
+    left: auto;
+    bottom: 0;
+    margin: auto;
+    animation: fadeInUp ease 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 
+.devImg2 {
     position: absolute;
     top: 5%;
     right: 10%;
@@ -293,14 +305,13 @@
     animation: fadeInAnimation ease 7s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
-    img{
+
+    img {
         border-radius: 10px;
         width: 380px;
-   
     }
 
-    p{
+    p {
         font: 15px;
         color: yellow;
         font-family: "Poppins";
@@ -417,13 +428,12 @@
     }
 }
 
+
+
 @media screen and (max-width: 480px) {
     // body { background-color: lightblue; /* Test color */ }
 
     .devImg2 {
-    
-    
-
         position: absolute;
         top: 92%;
         right: 10%;
@@ -433,14 +443,13 @@
         animation: fadeInAnimation ease 7s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-        
-        img{
+
+        img {
             border-radius: 10px;
             width: 300px;
-       
         }
-    
-        p{
+
+        p {
             font: 15px;
             color: yellow;
             font-family: "Poppins";
@@ -453,6 +462,26 @@
         }
     }
 
+    .self {
+        z-index: 0;
+        
+        
+        position: absolute;
+        top: 70%;
+        right: 0%;
+        left:50%;
+        bottom: 0;
+        margin: auto;
+        animation: fadeInUp ease 10s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+       
+
+        img{
+            width: 130px;
+           
+        }
+    }
 
     .skills-page {
         .text-zone {
@@ -618,13 +647,13 @@
 
     .devImg {
         z-index: 0;
-        width: 130px;
+        width: 150px;
         height: 400px;
         position: absolute;
-        top: 10%;
+        top: 5%;
         right: 30%;
         left: auto;
-        bottom: 30%;
+        bottom: 40%;
         margin: auto;
         animation: fadeInAnimation ease 7s;
         animation-iteration-count: 1;
@@ -667,11 +696,28 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    .self {
+        z-index: 0;
+        
+        
+        position: absolute;
+        top: 70%;
+        right: 0%;
+        left:50%;
+        bottom: 0;
+        margin: auto;
+        animation: fadeInUp ease 10s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+       
+
+        img{
+            width: 130px;
+           
+        }
+    }
 
     .devImg2 {
-    
-    
-
         position: absolute;
         top: 145%;
         right: 10%;
@@ -681,14 +727,13 @@
         animation: fadeInAnimation ease 7s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-        
-        img{
+
+        img {
             border-radius: 10px;
             width: 300px;
-       
         }
-    
-        p{
+
+        p {
             font: 15px;
             color: yellow;
             font-family: "Poppins";
@@ -700,7 +745,6 @@
             width: 100%;
         }
     }
-
 
     .skills-page {
         .text-zone {
@@ -913,11 +957,28 @@
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .self {
+        z-index: 0;
+        
+        
+        position: absolute;
+        top: 70%;
+        right: 0%;
+        left:50%;
+        bottom: 0;
+        margin: auto;
+        animation: fadeInUp ease 10s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+       
+
+        img{
+            width: 130px;
+           
+        }
+    }
 
     .devImg2 {
-    
-    
-
         position: absolute;
         top: 145%;
         right: 10%;
@@ -927,14 +988,13 @@
         animation: fadeInAnimation ease 7s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-        
-        img{
+
+        img {
             border-radius: 10px;
             width: 300px;
-       
         }
-    
-        p{
+
+        p {
             font: 15px;
             color: yellow;
             font-family: "Poppins";

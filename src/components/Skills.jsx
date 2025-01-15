@@ -6,7 +6,7 @@ import { faCode, faDatabase, faNetworkWired } from '@fortawesome/free-solid-svg-
 import mdb from '../assets/images/mdb.svg'
 import rest from '../assets/images/rest.png'
 import './About.scss'
-
+import Loader from 'react-loaders'
 
 const Skills = () => {
     return (
@@ -126,7 +126,7 @@ const Skills = () => {
 
             </div>
 
-
+            <Loader type='pacman' />
 
 
         </>

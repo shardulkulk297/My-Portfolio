@@ -8,6 +8,7 @@ import { faCss3, faGitAlt, faHtml5, faJava, faJsSquare, faNodeJs, faPython, faRe
 import Loader from 'react-loaders'
 import { useLocation } from 'react-router-dom'
 
+
 const About = () => {
 
     const [letterClass, setletterClass] = useState('text-animate');

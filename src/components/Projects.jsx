@@ -12,6 +12,7 @@ import bus from '../assets/images/bus.png'
 import qr from '../assets/images/qr.png'
 import ml from '../assets/images/ml.png'
 import git from '../assets/images/giyt.jpg'
+import Loader from 'react-loaders';
 
 const Projects = () => {
     return (
@@ -19,7 +20,7 @@ const Projects = () => {
             <div className="text-zone-projects">
 
                 <h1>My projects</h1>
-                
+
             </div>
 
             <div className='card-wrapper'>
@@ -99,7 +100,7 @@ const Projects = () => {
                             </Typography>
                             <Typography variant="body2" sx={{ color: '#94a3b8', fontSize: '1.1rem' }}>
                                 <p><strong>Tech Stack: HTML5, CSS3, Python3(Flask)</strong></p>
-                                
+
                                 Text to video converter using unsplash API for news and press releases
                             </Typography>
                         </CardContent>
@@ -198,7 +199,7 @@ const Projects = () => {
 
                 <div className='card'>
                     <Card sx={{
-                         height: '100%',
+                        height: '100%',
                         maxWidth: 345,
                         background: 'linear-gradient(145deg, #1e293b, #334155)',
                         color: '#ffffff',
@@ -225,7 +226,7 @@ const Projects = () => {
                             </Typography>
                             <Typography variant="body2" sx={{ color: '#94a3b8', fontSize: '1.1rem' }}>
                                 <p><strong>Tech stack: React, Node.js, Gemeni API, Google cloud text to speech </strong></p>
-                                A tourist information system 
+                                A tourist information system
                             </Typography>
                         </CardContent>
                         <CardActions>
@@ -292,7 +293,7 @@ const Projects = () => {
 
 
             </div>
-
+            <Loader type='pacman' />
 
         </div>
     )

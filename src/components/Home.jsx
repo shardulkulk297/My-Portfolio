@@ -8,6 +8,8 @@ import AnimateLetters from './AnimateLetters'
 import { useState } from 'react'
 import Loader from 'react-loaders'
 import dev from '../assets/images/Developer.svg'
+import sk from '../assets/images/sk.JPEG'
+
 const Home = () => {
 
     const [letterClass, setletterClass] = useState('text-animate');
@@ -57,6 +59,10 @@ const Home = () => {
 
                 <img src={dev} alt="dev" /> 
 
+            </div>
+
+            <div className='self'>
+                <img width={150} src={sk} alt="" />
             </div>
 
             <Loader type='pacman' />
