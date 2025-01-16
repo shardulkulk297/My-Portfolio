@@ -4,16 +4,21 @@ import LogoS from '../assets/images/logo-s.png'
 import LogoSubtitle from '../assets/images/logo_sub.png'
 import Sign from '../assets/images/signature.png'
 import sign2 from '../assets/images/sign2.png'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faGear, faHome, faTasks, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 import mee from '../assets/images/me.png'
 
-const Sidebar = () => {
+const Sidebar = ({isHomePage}) => {
+
+  console.log(isHomePage)
+
+  
   return (
     <>
-    <div className='nav-bar'>
+    <div className={`nav-bar ${isHomePage ? 'fadeInSide' : ' '}`}>
 
       <Link className='logo' to='/'>
 

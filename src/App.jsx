@@ -17,23 +17,28 @@ function App() {
 
   const location = useLocation()
   const [loading, setLoading] = useState(true);
+  const [animationFinished, setAnimationFinished] = useState(false);
 
   useEffect(() => {
     
     const timer = setTimeout(() => {
       setLoading(false); 
-    }, 2000); 
+    }, 1000); 
 
     return () => clearTimeout(timer);
   }, []);
+
+  const handleAnimationEnd = () => {
+    setAnimationFinished(true); // Animation finished, show the routes
+  };
 
   
 
   return (
     <>
-     <Loader isLoading={loading} />
+     <Loader isLoading={loading} onAnimationEnd={handleAnimationEnd} />
 
-    {!loading && (
+    {!loading && animationFinished && (
 
       <div>
         <Toaster position='top-center'></Toaster>

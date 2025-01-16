@@ -2,19 +2,35 @@
     background: #181818;
     width: 100px;
     height: 100%;
-    position: absolute;
+    position: fixed; // Removed duplicate position property
     top: 0;
     z-index: 3;
     min-height: 500px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding-top: 16px;
-    position: fixed;
+
+    // Add initial state for animation
+    opacity: 1;
+    transform: translateX(0);
+
+    &.fadeInSide {
+        animation: fadeIn 1s ease-in-out forwards;
+    }
 }
 
+@keyframes fadeIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 .logo {
     display: flex;
     flex-direction: column;
@@ -106,9 +122,9 @@ nav {
         }
     }
 
-    a.skills-link{
-        &::after{
-            content: "LEARNINGS";
+    a.skills-link {
+        &::after {
+            content: "SKILLS";
         }
     }
 
@@ -196,7 +212,7 @@ ul {
     }
 
     .nav-bar {
-        width:60px;
+        width: 60px;
         padding-top: 8px;
     }
 
@@ -230,10 +246,6 @@ ul {
 
 /* Small Mobile Responsiveness (max-width: 480px) */
 @media screen and (max-width: 480px) {
-
-
-    
-
     ul li a {
         font-size: 18px;
     }
@@ -242,7 +254,7 @@ ul {
     }
 
     .nav-bar {
-        width:60px;
+        width: 60px;
         padding-top: 8px;
     }
 

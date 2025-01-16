@@ -7,10 +7,12 @@ import mdb from '../assets/images/mdb.svg'
 import rest from '../assets/images/rest.png'
 import './About.scss'
 import Loader from 'react-loaders'
-
+import Sidebar from './Sidebar'
+import './Sidebar.scss'
 const Skills = () => {
     return (
         <>
+        <Sidebar isHomePage={false} />
             <div className='container skills-page'>
                 <div className='text-zone '>
                     <h1>Skills</h1>

@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <>
     <div className='App'>
-      <Sidebar />
+      {/* <Sidebar isHomePage={false}/> */}
 
       <div className='page'>
         {/* <span className='tags top-tags'>

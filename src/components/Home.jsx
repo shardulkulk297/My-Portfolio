@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import './Home.scss'
 import './Layout.scss'
+import Sidebar from './Sidebar'
 import Sign from '../assets/images/signature.png'
 import LogoS from '../assets/images/logo-s.png'
 import { Link } from 'react-router-dom'
@@ -27,7 +28,9 @@ const Home = () => {
 
     return (
         <>
+            <Sidebar isHomePage={true} />
             <div>
+
 
                 <div className='container home-page'>
 
@@ -40,7 +43,7 @@ const Home = () => {
                             <span className={`${letterClass} _14`}>'m</span>
 
                             <span> </span>
-                            <span style={{color:'yellow', fontSize:'60px' }} className={`${letterClass} _15 firstChar`} >S</span>
+                            <span style={{ color: 'yellow', fontSize: '60px' }} className={`${letterClass} _15 firstChar`} >S</span>
                             <AnimateLetters letterClass={letterClass} strArray={nameArray} idx={15} />
                             <br />
                             <AnimateLetters letterClass={letterClass} strArray={jobArray} idx={15} />
@@ -57,12 +60,12 @@ const Home = () => {
 
             <div className='devImg '>
 
-                <img src={dev} alt="dev" /> 
+                <img src={dev} alt="dev" />
 
             </div>
 
             <div className='self'>
-            <a href="linked.com/shardulkulk297"><img width={150} src="https://i.ibb.co/qWrPPm9/sk.png" alt="sk" border="0"/></a>
+                <a href="linked.com/shardulkulk297"><img width={150} src="https://i.ibb.co/qWrPPm9/sk.png" alt="sk" border="0" /></a>
             </div>
 
             {/* <Loader type='pacman' /> */}

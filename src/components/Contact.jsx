@@ -5,7 +5,8 @@ import AnimateLetters from './AnimateLetters'
 import emailJs from '@emailjs/browser'
 import toast from 'react-hot-toast';
 import { MapContainer, Marker, TileLayer, Popup } from 'react-leaflet'
-
+import './Sidebar.scss'
+import Sidebar from './Sidebar'
 const Contact = () => {
 
     const [letterClass, setletterClass] = useState('text-animate')
@@ -48,6 +49,7 @@ const Contact = () => {
 
     return (
         <>
+         <Sidebar isHomePage={false}/>
 
             <div className='container contact-page'>
 

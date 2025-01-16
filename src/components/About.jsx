@@ -7,8 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faGitAlt, faHtml5, faJava, faJsSquare, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import { useLocation } from 'react-router-dom'
-
-
+import './Sidebar.scss'
+import Sidebar from './Sidebar'
 const About = () => {
 
     const [letterClass, setletterClass] = useState('text-animate');
@@ -33,6 +33,7 @@ const About = () => {
     return (
 
         <>
+         <Sidebar isHomePage={false}/>
 
             {showContent && (
                 <div className='container about-page'>
