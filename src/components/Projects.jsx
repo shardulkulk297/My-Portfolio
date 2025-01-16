@@ -293,7 +293,7 @@ const Projects = () => {
 
 
             </div>
-            <Loader type='pacman' />
+            {/* <Loader type='pacman' /> */}
 
         </div>
     )

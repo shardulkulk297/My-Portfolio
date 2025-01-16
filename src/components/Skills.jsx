@@ -126,7 +126,7 @@ const Skills = () => {
 
             </div>
 
-            <Loader type='pacman' />
+            {/* <Loader type='pacman' /> */}
 
 
         </>

@@ -66,7 +66,7 @@ const About = () => {
                 <p>DIPEX 2024 Finalist & General Championship Winner</p>
             </div>
 
-            <Loader type="pacman" />
+            {/* <Loader type="pacman" /> */}
         </>
     )
 }
