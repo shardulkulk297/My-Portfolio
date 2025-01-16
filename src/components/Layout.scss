@@ -271,7 +271,7 @@
     height: 400px;
     position: absolute;
     top: 0%;
-    right: 7%;
+    right: 3%;
     left: auto;
     bottom: 0;
     margin: auto;
@@ -286,13 +286,26 @@
     height: 400px;
     position: absolute;
     top: 0%;
-    right: 20%;
+    right: 21%;
     left: auto;
     bottom: 0;
     margin: auto;
     animation: fadeInUp ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    cursor: pointer;
+
+    img{
+        
+        width: 250px;
+        
+    }
+
+    a{
+        img{
+            cursor: pointer;
+        }
+    }
 }
 
 .devImg2 {
