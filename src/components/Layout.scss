@@ -444,6 +444,10 @@
 
 
 @media screen and (max-width: 480px) {
+
+    body{
+        overflow-y: hidden;
+    }
     // body { background-color: lightblue; /* Test color */ }
 
     .devImg2 {
