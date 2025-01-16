@@ -129,7 +129,7 @@ const Contact = () => {
 
             </div>
 
-            {/* <Loader type='pacman' /> */}
+            <Loader type='pacman' />
 
 
         </>
