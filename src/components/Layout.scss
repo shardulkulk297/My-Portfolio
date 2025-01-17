@@ -282,8 +282,7 @@
 
 .self {
     z-index: 0;
-    width: 400px;
-    height: 400px;
+    
     position: absolute;
     top: 0%;
     right: 21%;
@@ -445,6 +444,13 @@
 
 @media screen and (max-width: 480px) {
 
+    .page{
+        width: 49vh;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    }
+
     body{
         overflow-y: hidden;
     }
@@ -484,9 +490,9 @@
         
         
         position: absolute;
-        top: 80%;
+        top: 62%;
         right: 0%;
-        left:50%;
+        left:60%;
         bottom: 0;
         margin: auto;
         animation: fadeInUp ease 4s;
@@ -495,7 +501,7 @@
        
 
         img{
-            width: 130px;
+            width: 150px;
            
         }
     }

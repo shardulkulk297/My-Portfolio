@@ -65,7 +65,7 @@ const Home = () => {
             </div>
 
             <div className='self'>
-                <a href="linked.com/shardulkulk297"><img width={150} src="https://i.ibb.co/LRNY972/sk.png" alt="sk" border="0" /></a>
+                <a href="linked.com/shardulkulk297"><img src="https://i.ibb.co/LRNY972/sk.png" alt="sk" border="0" /></a>
             </div>
 
             {/* <Loader type='pacman' /> */}
