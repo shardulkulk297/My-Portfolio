@@ -118,45 +118,6 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .contact-form {
-        margin-top: 18rem;
-        padding: 3rem;
-        max-width: 500px;
-
-        ul {
-            li {
-                &.half {
-                    width: 100%;
-                    margin-right: 0;
-                    margin-bottom: 1rem;
-                }
-            }
-
-            input,
-            textarea {
-                font-size: 15px;
-            }
-        }
-    }
-
-    .info-map {
-        right: 25%;
-        width: 250px;
-        padding: 15px;
-
-        span {
-            font-size: 15px;
-            padding-top: 15px;
-        }
-    }
-
-    .map-wrap {
-        width: 45%;
-    }
-}
-
-// Mobile Styles (max-width: 768px)
-@media screen and (min-width: 481px) and (max-width: 768px) {
     .contact-page .text-zone {
         position: absolute;
         left: 10%;
@@ -173,8 +134,8 @@
       p{
         font-size: 12px;
         position: relative;
-        right: 14%;
-        padding: 5px;
+        right: 0%;
+        padding: 8px;
       }
       
       
@@ -185,7 +146,7 @@
         padding: 20px;
 
         &::before{
-            padding: 15px;
+            padding: 10px;
         }
        
       }
@@ -194,7 +155,7 @@
     .contact-form {
         position: absolute;
         top: 500px;
-        right: 90px;
+        right: 50px;
         width: 80%;
         padding: 1.5rem;
         margin-top: 1rem;
@@ -226,9 +187,10 @@
 
     .info-map {
         position: relative;
-        top: -15px;
+        top: -25px;
         right: 0px;
         left: 50px;
+        border-radius: 5px;
         
         width: 60%;
         margin-bottom: 1rem;
@@ -245,6 +207,96 @@
     }
 }
 
+// Mobile Styles (max-width: 768px)
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .contact-page .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 40%;
+        
+        transform: translateY(-50%);
+        width: 90%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+          
+      }
+      
+      p{
+        font-size: 12px;
+        position: relative;
+        right: 0%;
+        padding: 8px;
+      }
+      
+      
+      
+      h1 {
+        font-size: 18px;
+        line-height: 40px;
+        padding: 20px;
+
+        &::before{
+            padding: 10px;
+        }
+       
+      }
+
+
+    .contact-form {
+        position: absolute;
+        top: 500px;
+        right: 50px;
+        width: 80%;
+        padding: 1.5rem;
+        margin-top: 1rem;
+
+        ul {
+            li {
+                margin-bottom: 0.6rem;
+            }
+
+            input,
+            textarea {
+                font-size: 13px;
+                padding: 0.6rem;
+            }
+
+            textarea {
+                height: 80px;
+            }
+
+            .flat-buttonc {
+                padding: 0rem;
+                font-size: 13px;
+                width: 30%;
+                float: right;
+            }
+        }
+    }
+    
+
+    .info-map {
+        position: relative;
+        top: -25px;
+        right: 0px;
+        left: 50px;
+        border-radius: 5px;
+        
+        width: 60%;
+        margin-bottom: 1rem;
+        box-sizing: border-box;
+        font-size: 10px;
+        span{
+            font-size: 10px;
+        }
+    }
+
+    .map-wrap {
+        visibility: hidden;
+        height: 250px;
+    }
+}
 // Animations
 @keyframes fadeIn {
     0% {
@@ -274,7 +326,7 @@
         top: 40%;
         
         transform: translateY(-50%);
-        width: 85%;
+        width: 90%;
         vertical-align: middle;
         display: table-cell;
         max-height: 90%;
@@ -284,7 +336,7 @@
       p{
         font-size: 12px;
         position: relative;
-        right: 7%;
+        right: 0%;
         padding: 8px;
       }
       
@@ -305,7 +357,7 @@
     .contact-form {
         position: absolute;
         top: 500px;
-        right: 90px;
+        right: 50px;
         width: 80%;
         padding: 1.5rem;
         margin-top: 1rem;

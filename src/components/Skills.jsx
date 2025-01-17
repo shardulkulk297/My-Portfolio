@@ -90,7 +90,7 @@ const Skills = () => {
                             <div className='skill-text'>
                                 <h2>Soft Skills</h2>
                             </div>
-                            <div className='icons'>
+                            <div className='stext'>
                                 <p>Leadership</p>
                                 <p>Communication</p>
                                 <p>People Management</p>

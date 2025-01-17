@@ -26,11 +26,17 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
+    
+}
+.stext{
     p {
         gap: 0px;
         margin: 0px;
         border: 2px solid yellow;
         padding: 5px;
+        width: 0;
+        padding: 10px;
+        margin: 10px;
         border-radius: 10px;
         font-family: "Poppins";
         font-weight: 800;
@@ -284,8 +290,8 @@
     z-index: 0;
     
     position: absolute;
-    top: 0%;
-    right: 21%;
+    top: 50%;
+    right: 45%;
     left: auto;
     bottom: 0;
     margin: auto;
@@ -460,7 +466,7 @@
         position: absolute;
         top: 92%;
         right: 10%;
-        left: 16%;
+        left: 20%;
         bottom: 5%;
         margin: auto;
         animation: fadeInAnimation ease 4s;
@@ -512,13 +518,14 @@
             flex-direction: column; /* Stack the elements vertically */
             gap: 1.5rem; /* Add consistent spacing between elements */
             position: absolute;
-            left: 5%;
+            left: 0%;
             top: 10%;
             transform: translateY(-50%);
-            width: 35%;
+            width: 100%;
+            height: 20%;
             vertical-align: middle;
             display: table-cell;
-            max-height: 90%;
+            
 
             .skills-content {
                 width: 100%;
@@ -533,7 +540,7 @@
             margin-top: 0;
             position: relative;
             margin-bottom: 40px;
-            left: 10px;
+            left: 40px;
             padding: 10px;
 
             &::before {
@@ -590,8 +597,8 @@
     }
     .skills-content {
         position: relative;
-        width: 100%;
-        margin-bottom: 30px;
+        width: 90%;
+        
     }
     .mainS {
         padding-bottom: 10px;
@@ -603,12 +610,16 @@
         width: 100%;
     }
 
+    stext{
+        
+    }
+
     .icons {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 10px;
         margin: 0px 0;
-        width: 100%;
+        width: 00%;
         position: relative;
         left: 0;
         top: 0;
@@ -684,7 +695,7 @@
     }
 
     .card .MuiButton-root {
-        bottom: 5px;
+        bottom: 20px;
     }
     .cardContent p {
         color: #94a3b8;
@@ -698,6 +709,7 @@
     .card {
         padding: 5px;
         margin: 5px;
+        width: 85%;
     }
 
     .card-wrapper {
@@ -710,41 +722,33 @@
         padding: 10px;
         padding-bottom: 10px;
         max-width: 1200px;
-        width: 80%;
+        width: 70%;
         position: relative;
-        left: -8%;
+        left: -16%;
         right: 10%;
         bottom: 3%;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .self {
-        z-index: 0;
-        
-        
-        position: absolute;
-        top: 70%;
-        right: 0%;
-        left:50%;
-        bottom: 0;
-        margin: auto;
-        animation: fadeInUp ease 4s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-       
-
-        img{
-            width: 130px;
-           
-        }
+    
+    .page{
+        width: 49vh;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
     }
+
+    body{
+        overflow-y: hidden;
+    }
+    // body { background-color: lightblue; /* Test color */ }
 
     .devImg2 {
         position: absolute;
-        top: 145%;
+        top: 92%;
         right: 10%;
-        left: 16%;
+        left: 20%;
         bottom: 5%;
         margin: auto;
         animation: fadeInAnimation ease 4s;
@@ -769,19 +773,41 @@
         }
     }
 
+    .self {
+        z-index: 0;
+        
+        
+        position: absolute;
+        top: 62%;
+        right: 0%;
+        left:60%;
+        bottom: 0;
+        margin: auto;
+        animation: fadeInUp ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+       
+
+        img{
+            width: 130px;
+           
+        }
+    }
+
     .skills-page {
         .text-zone {
             display: flex;
             flex-direction: column; /* Stack the elements vertically */
             gap: 1.5rem; /* Add consistent spacing between elements */
             position: absolute;
-            left: 5%;
+            left: 0%;
             top: 10%;
             transform: translateY(-50%);
-            width: 35%;
+            width: 100%;
+            height: 20%;
             vertical-align: middle;
             display: table-cell;
-            max-height: 90%;
+            
 
             .skills-content {
                 width: 100%;
@@ -796,7 +822,7 @@
             margin-top: 0;
             position: relative;
             margin-bottom: 40px;
-            left: 10px;
+            left: 40px;
             padding: 10px;
 
             &::before {
@@ -853,8 +879,8 @@
     }
     .skills-content {
         position: relative;
-        width: 100%;
-        margin-bottom: 30px;
+        width: 90%;
+        
     }
     .mainS {
         padding-bottom: 10px;
@@ -866,12 +892,16 @@
         width: 100%;
     }
 
+    stext{
+        
+    }
+
     .icons {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 10px;
         margin: 0px 0;
-        width: 100%;
+        width: 00%;
         position: relative;
         left: 0;
         top: 0;
@@ -901,6 +931,11 @@
         }
     }
 
+    .tags {
+        left: 60px;
+        font-size: 15px;
+    }
+
     .project-page h1 {
         font-size: 40px;
         padding: 10px;
@@ -908,11 +943,6 @@
         &::before {
             top: -5px;
         }
-    }
-
-    .tags {
-        left: 60px;
-        font-size: 15px;
     }
 
     .container {
@@ -933,13 +963,13 @@
 
     .devImg {
         z-index: 0;
-        width: 130px;
+        width: 150px;
         height: 400px;
         position: absolute;
-        top: 10%;
+        top: 5%;
         right: 30%;
         left: auto;
-        bottom: 30%;
+        bottom: 40%;
         margin: auto;
         animation: fadeInAnimation ease 4s;
         animation-iteration-count: 1;
@@ -947,7 +977,7 @@
     }
 
     .card .MuiButton-root {
-        bottom: 5px;
+        bottom: 20px;
     }
     .cardContent p {
         color: #94a3b8;
@@ -960,6 +990,8 @@
     }
     .card {
         padding: 5px;
+        margin: 5px;
+        width: 85%;
     }
 
     .card-wrapper {
@@ -968,13 +1000,13 @@
         gap: 20px;
         justify-items: center;
         align-items: start;
-        margin: 0px auto;
+        margin: 10px auto;
         padding: 10px;
         padding-bottom: 10px;
         max-width: 1200px;
-        width: 100%;
+        width: 70%;
         position: relative;
-        left: -8%;
+        left: -16%;
         right: 10%;
         bottom: 3%;
     }
