@@ -218,6 +218,12 @@ h2 {
             font-size: 32px;
             line-height: 36px;
 
+            &::after{
+                right: 10%;
+                top: 27%;
+
+            }
+
             &::before,
             &::after {
                 font-size: 20px;
