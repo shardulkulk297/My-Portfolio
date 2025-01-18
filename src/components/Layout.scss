@@ -497,17 +497,18 @@
         
         position: absolute;
         top: 62%;
-        right: 0%;
-        left:60%;
+        right: 10%;
+        left:50%;
         bottom: 0;
-        margin: auto;
+        // margin: auto;
         animation: fadeInUp ease 4s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
        
 
         img{
-            width: 130px;
+            width: 160px;
+            height: auto;
            
         }
     }

@@ -246,11 +246,15 @@ ul {
 
 /* Small Mobile Responsiveness (max-width: 480px) */
 @media screen and (max-width: 480px) {
+    .nav-bar{
+        position: fixed;
+        
+    }
     ul li a {
         font-size: 18px;
     }
     ul {
-        bottom: 20px;
+        bottom: 100px;
     }
 
     .nav-bar {
