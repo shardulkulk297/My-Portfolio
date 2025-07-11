@@ -45,7 +45,7 @@ function App() {
       <Routes location={location} key={location.pathname}>
 
         <Route path='/' element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index  element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
           <Route path='skills' element={<Skills />} />

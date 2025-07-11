@@ -13,6 +13,7 @@ import qr from '../assets/images/qr.png'
 import ml from '../assets/images/ml.png'
 import git from '../assets/images/giyt.jpg'
 import Pass from '../assets/images/Pass.png'
+import fly from '../assets/images/fly.png'
 import Loader from 'react-loaders';
 import './Sidebar.scss';
 import Sidebar from './Sidebar'
@@ -29,7 +30,47 @@ const Projects = () => {
 
                 <div className='card-wrapper'>
 
+                    <div className='card'>
+                        <Card sx={{
+                            maxWidth: 345,
+                            height: '100%',
+                            background: 'linear-gradient(145deg, #1e293b, #334155)',
+                            color: '#ffffff',
+                            borderRadius: '15px',
+                            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.5)',
+                        }}>
+                            <CardMedia
+                                component="img"
+                                alt="CDE"
+                                height="140"
+                                image={fly}
+                            />
+                            <CardContent className='cardContent'>
+                                <Typography gutterBottom variant="h5" component="div"
+                                    sx={{
 
+                                        fontFamily: "'Poppins', sans-serif",
+                                        color: 'yellow',
+                                        fontWeight: 'Bold',
+                                        fontSize: '1.5rem'
+                                    }}>
+
+                                    SimpliFly: Flight Ticket Booking System
+                                </Typography>
+                                <Typography variant="body2" sx={{ color: '#94a3b8', fontSize: '1.1rem' }}>
+                                    <p><strong>Tech Stack: Springboot, react, MySQL</strong></p>
+                                    A simple and dynamic Flight Ticket booking system
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Button size="large"
+                                    href='https://github.com/shardulkulk297/Simplifly-AirTicketBooking-System'
+                                    sx={{ color: '#38bdf8', fontSize: '1.1 rem' }}>View</Button>
+                                <Button size="Large" sx={{ color: '#38bdf8' }}>Learn More</Button>
+                            </CardActions>
+                        </Card>
+
+                    </div>
 
 
                     <div className='card'>
@@ -201,7 +242,7 @@ const Projects = () => {
 
                     </div>
 
-                    
+
 
                     <div className='card'>
                         <Card sx={{
